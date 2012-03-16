@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <p>{{ message|escape }}</p>
+
+   <p class="navLink"><a class="main" href="/blog/">Back to front page</a></p>
+{% endblock %}
+
+{# vim: set ts=3 sw=3 et: #}

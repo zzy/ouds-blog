@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OUDS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-19 19:30-0500\n"
+"PO-Revision-Date: 2008-09-05 23:36+0800\n"
+"Last-Translator: 长弓骛之 <ouds@gaiding.com>\n"
+"Language-Team: ThinkerUnion <ouds@gaiding.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: templates/init.tu
+msgid "I Know You !"
+msgstr ""
+
+#: templates/init.tu
+msgid "Welcome !"
+msgstr ""
+
+#: templates/init.tu
+msgid "Hello, The Default Language Of Your Browser Is"
+msgstr ""
+
+#: templates/init.tu
+msgid "Redirect In 12 Seconds"
+msgstr ""
+
+#: templates/init.tu
+msgid "Switch Language :"
+msgstr ""
+
+#: templates/init.tu
+msgid "Sorry, Chinese, English And German Is Currently Available"
+msgstr ""
+
+#: templates/init.tu
+msgid "Friendship Links"
+msgstr ""
+
+#: tu.settings.py :LANGUAGES
+msgid "Chinese Simplified"
+msgstr ""
+
+#: tu.settings.py :LANGUAGES
+msgid "Chinese Traditional"
+msgstr ""
+
+#: tu.settings.py :LANGUAGES
+msgid "English"
+msgstr ""
+
+#: tu.settings.py :LANGUAGES
+msgid "German"
+msgstr ""
+
+#: templates/base.tu
+msgid "Chat With Ouds"
+msgstr ""
+
+#: templates/base.tu
+msgid "Ouds"
+msgstr ""
+
+#: templates/base.tu
+msgid "Blog"
+msgstr ""
+
+#: templates/base.tu
+msgid "Archive"
+msgstr ""
+
+#: templates/base.tu
+msgid "Tag"
+msgstr ""
+
+#: templates/base.tu
+msgid "Download"
+msgstr ""
+
+#: templates/base.tu
+msgid "About Me"
+msgstr ""
+
+#: templates/base.tu
+msgid "Search"
+msgstr ""
+
+#: templates/base.tu
+msgid "Last Posts"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Catalog Manager"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Name"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Slug"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Catalog"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Post Count"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Birth Date"
+msgstr ""
+
+#: tu.blog.models.py :Catalog
+msgid "Edit Date"
+msgstr ""
+
+#: tu.blog.models.py :Tag
+msgid "Tag Manager"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Entry Manager"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Entry"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Title"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Is Public ?"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Input Format"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Body"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Comments"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Read"
+msgstr ""
+
+#: tu.blog.models.py :Entry
+msgid "Body Converted"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "Comment Manager"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "Author"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "E-mail"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "URL"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "Content"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "Time"
+msgstr ""
+
+#: tu.blog.models.py :Comment
+msgid "IP"
+msgstr ""
+
+#: tu.blog.models.py :BlogRoll
+msgid "Blogroll"
+msgstr ""
+
+#: tu.blog.models.py :BlogRoll
+msgid "Address"
+msgstr ""
+
+#: templates/blog :entry_list
+msgid "Catalog :"
+msgstr ""
+
+#: templates/blog :entry_list
+msgid "Posted At :"
+msgstr ""
+
+#: templates/blog :entry_list
+msgid "Edited At :"
+msgstr ""
+
+#: templates/blog :entry_list
+msgid "Read More ..."
+msgstr ""
+
+#: templates/blog :entry_list
+msgid "Tags :"
+msgstr ""
+
+#: templates/blog :entry
+msgid "Entry List"
+msgstr ""
+
+#: templates/blog :entry
+msgid "Anonymity"
+msgstr ""
+

@@ -1,0 +1,36 @@
+{% extends "base.ouds" %}
+
+{% load i18n %}
+
+{% block title %} {{ tag }} {% endblock %}
+
+{% block body_id %}blog{% endblock %}
+
+{% block matter %}
+	{% for entry in tag.entries.all %}
+		<div style="width: 98%; text-align: left;">
+			<hr style="border-style: dotted;"/>
+			<div style="float: left; width: 88%;"><h2><a href="{{ entry.get_absolute_url }}">{{ entry.title|escape }}</a></h2></div>
+			<div style="margin:0; padding: 0; float: right; text-align: center; vertical-align: top; width: 12%;">
+				{{ entry.birth_date|date:"M" }}<hr/>
+				<strong>{{ entry.birth_date|date:"d D" }}</strong><hr/>
+				{{ entry.birth_date|date:"Y" }}
+			</div>
+			<div>
+				{% trans 'Catalog :' %} <a href="{{ entry.catalog.get_absolute_url }}">{{ entry.catalog }}</a>&nbsp;&nbsp;
+				{% trans 'Posted At :' %} {{ entry.birth_date }}&nbsp;&nbsp;
+				{% trans 'Edited At :' %} {{ entry.edit_date }}
+			</div>
+                        <div>{{ entry.body_html|linebreaks|slice:":500" }}</strong></div>
+            <div>
+            	{% trans 'Tags :' %}
+	            {% for tag in entry.tags.all %}
+	            	<a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+	            {% endfor %}&nbsp;&nbsp;
+	            {% trans 'Comments' %}({{ entry.comments }})&nbsp;&nbsp;
+	            {% trans 'Read' %}({{ entry.read }})&nbsp;&nbsp;
+	            <a href="{{ entry.get_absolute_url }}">{% trans 'Read More ...' %}</a>
+	        </div>
+		</div>
+	{% endfor %}
+{% endblock %}

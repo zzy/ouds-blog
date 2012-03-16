@@ -1,0 +1,42 @@
+{% extends "base.ouds" %}
+
+{% load i18n %}
+
+{% block title %} {% trans 'Archive' %} {{ year }} {% endblock %}
+
+{% block body_id %}archive{% endblock %}
+
+{% block matter %}
+	<h1>{% trans 'Archive' %} {{ year }}</h1>
+
+	<h3>
+		{% if previous %} <strong> <a href="/blog/archive/{{ previous }}/"> {% trans 'Back To' %} {{ previous }}</a> </strong> {% endif %}
+		{% if next %} - 
+			<strong> <a href="/blog/archive/{{ next }}/"> {% trans 'Onwards To' %} {{ next }}</a> </strong>
+			{% ifnotequal next latest %} - 
+                                <strong> <a href="/blog/archive/{{ latest }}/"> {% trans 'Zoom Forwards To' %} {% trans 'Current Year' %} ({{ latest }})</a> </strong>
+                        {% endifnotequal %}
+		{% endif %}
+        </h3>
+
+	
+	<div style="padding-left: 34px; text-align: left;">
+		{% if entry_list %}
+			
+         	<ol>
+         		{% for entry in entry_list %}
+	         		<li>
+	         			{{ entry.birth_date|date:"Y-m-d" }}
+	         			<a href="{{ entry.get_absolute_url }}"><strong>{{ entry.title }}</strong> {{ entry.body|slice:":34" }}</a>
+	         		</li>
+	         	{% endfor %}
+	         </ol>
+	        
+	    {% else %}
+	    	<center><h3>{% trans 'There Are No Entries Available For This Year.' %}</h3></center>
+	    {% endif %}
+	</div>
+	
+
+   
+{% endblock %}

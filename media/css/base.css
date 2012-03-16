@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+
+/* 
+print style of site.
+www.mmxxt.com by ThinkerUnion Software (ThinkerUnion.com)
+Copyright (c) 2007 ThinkerUnion.com. Please don't steal.
+*/
+
+/* SETUP */
+
+body { margin:0; padding:0; background: #FDFDFD url(/media/imgs/bg.gif); color:green; }
+body, td { font: 14px/1.2em Georgia; }
+#container { margin:0; padding:0; position:relative; min-width:800px; max-width:100em; background:#FDFDFD url(/media/imgs/bg.gif); }
+
+/* LINKS */
+
+a {text-decoration: none;}
+a img {border: none;}
+a:link { color: blue; }
+a:visited { color: gray; }
+a:hover { color: red; background: pink; }
+
+/* HEADER */
+
+#header { margin:0; padding:0; position:relative; height:72px; background:#FDFDFD url(/media/imgs/bg.gif); }
+#header h1#logo { margin:0; padding:0; width:64px; height:64px; position:absolute; bottom:4px; left:4px; }
+
+/* NAV */
+
+#nav { position:absolute; margin:0; padding:0; bottom:0; right:0; font-family: Georgia; white-space:nowrap; }
+#nav li { display:block; float: left; list-style-type:none; margin:0; padding:0; }
+#nav a { display:block; float:left; padding:5em 16px 12px 16px; }
+#nav a:hover { color:white; background:green; }
+#ouds #nav-ouds a, #blog #nav-blog a, #archive #nav-archive a, #download #nav-download a { color:black; font-weight:bold; background:#FDFDFD url(/media/imgs/nav_bg.gif) bottom repeat-x; }
+
+/* BILLBOARDS */
+
+#billboard { background:#FDFDFD url(/media/imgs/nav_bg.gif) repeat-x; border-bottom:1.2px solid #FDFDFD url(/media/imgs/nav_bg.gif) repeat-x; }
+#billboard h2 { margin:0; padding: 0; }
+#ouds #billboard h2 { margin:0; text-indent:-5000px; height:80px; width:100%; background:url(/media/imgs/ouds.gif) no-repeat; }
+#blog #billboard h2 { margin:0; text-indent:-5000px; height:80px; width:100%; background:url(/media/imgs/blog/blog.gif) no-repeat; }
+#archive #billboard h2 { margin:0; text-indent:-5000px; height:80px; width:100%; background:url(/media/imgs/blog/archive.gif) no-repeat; }
+#download #billboard h2 { margin:0; text-indent:-5000px; height:80px; width:100%; background:url(/media/imgs/download/download.gif) no-repeat; }
+
+.errorlist {
+	margin: 0;
+	margin-left: 15px;
+	padding: 0;
+	background-color: yellow;
+}
+
+/* FIELDSET & LEGEND */
+
+fieldset {
+	margin: 0;
+	padding: 5px;
+}
+
+legend {
+	color:gray;
+	font-weight:bold;
+	font-style:italic;
+	vertical-align: middle;
+}
+
+/* TABLE */
+
+table {
+    margin:0;
+    padding:0;
+}
+
+caption {
+	font-family: Georgia;
+	font-size: large;
+	font-weight: bold;
+}
+
+th {
+		font: bold 13px/1.3em;
+		background:#94da3a;
+		color:#092e20;
+		/* border: 1px #94da3a dotted; */
+		cursor:default;
+		hover:#fc7;
+}
+
+th a:link, th a:visited { color:#345678; }
+th a:hover { color:#785634; }
+
+th.over {
+    background:none;
+    color:white;
+    cursor: pointer;
+}
+
+/* FORM */
+
+form {
+    margin:0;
+    padding:0;
+}
+
+input, select, textarea {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+    color: green;
+    border: 1px dashed green;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.v2t { padding-top: 3px; }
+
+.button {
+	text-align: center;
+	background-color: #dbe5e8;
+    background-attachment: scroll;
+    border-color: green;
+    border-style: ridge;
+}
+
+/* CONTENT */
+ul, ol { display:block; float: left; margin:0; padding: 0; padding-left:22px; }
+h1,h2 { margin-top:.8em; margin-left:.34em; font-family: Georgia; font-weight:bolder; }
+h1 { font-size:218%; margin-top:.6em; margin-bottom:.6em; line-height:1.1em; }
+h2 { font-size:150%; margin-top:1em; margin-bottom:.2em; line-height:1.2em; }
+
+/* FOOTER */
+
+hr { border: 1px dashed green; height: 0; }
+#footer { clear:both; padding: 10px; text-align:center; font-size:90%; background:#FDFDFD url(/media/imgs/bg.gif); }

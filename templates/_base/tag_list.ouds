@@ -1,0 +1,6 @@
+{% if tag_list %}
+	{% for object in tag_list %}
+		<a href="/blog/tag/{{ object.slug }}/"> {{ object }} </a>
+	{% endfor %}
+{% endif %}
+

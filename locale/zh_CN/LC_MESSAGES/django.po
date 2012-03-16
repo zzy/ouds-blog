@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OUDS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-19 19:30-0500\n"
+"PO-Revision-Date: 2011-05-10 11:09+0800\n"
+"Last-Translator: 长弓骛之 <ouds@lospring.com>\n"
+"Language-Team: ThinkerUnion <ouds@gaiding.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA MAINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: templates/init.tu
+msgid "I Know You !"
+msgstr "我知道您！"
+
+#: templates/init.tu
+msgid "Welcome !"
+msgstr "谢谢光临！"
+
+#: templates/init.tu
+msgid "Hello, The Default Language Of Your Browser Is"
+msgstr "您好，您的浏览器默认语言为"
+
+#: templates/init.tu
+msgid "Redirect In"
+msgstr "将在"
+
+#: templates/init.tu
+msgid "Seconds"
+msgstr "秒后跳转"
+
+#: templates/init.tu
+msgid "Switch Language :"
+msgstr "切换语言："
+
+#: templates/init.tu
+msgid "Sorry, Chinese, English And German Is Currently Available"
+msgstr "抱歉，当前只支持中、英、德三种语言"
+
+#: templates/init.tu
+msgid "Friendship Links"
+msgstr "友好链接"
+
+#: tu.settings.py :LANGUAGES
+msgid "Chinese Simplified"
+msgstr "简体中文"
+
+#: tu.settings.py :LANGUAGES
+msgid "Chinese Traditional"
+msgstr "繁体中文"
+
+#: tu.settings.py :LANGUAGES
+msgid "English"
+msgstr "英语"
+
+#: tu.settings.py :LANGUAGES
+msgid "German"
+msgstr "德语"
+
+#: templates/base.tu
+msgid "Chat With Ouds"
+msgstr "和骛之聊天"
+
+#: templates/base.tu
+msgid "Ouds"
+msgstr "骛之"
+
+#: templates/base.tu
+msgid "Blog"
+msgstr "博客"
+
+#: templates/base.tu
+msgid "Archive"
+msgstr "文集"
+
+#: templates/base.tu
+msgid "Tag"
+msgstr "标签"
+
+#: templates/base.tu
+msgid "Download"
+msgstr "下载"
+
+#: templates/base.tu
+msgid "About Me"
+msgstr "关于我"
+
+#: templates/base.tu
+msgid "Search"
+msgstr "搜索"
+
+#: templates/base.tu
+msgid "Last Posts"
+msgstr "最后发表"
+
+#: tu.blog.models.py :Catalog
+msgid "Catalog Manager"
+msgstr "分类管理"
+
+#: tu.blog.models.py :Catalog
+msgid "Name"
+msgstr "名称"
+
+#: tu.blog.models.py :Catalog
+msgid "Slug"
+msgstr "简称"
+
+#: tu.blog.models.py :Catalog
+msgid "Catalog"
+msgstr "分类"
+
+#: tu.blog.models.py :Catalog
+msgid "Post Count"
+msgstr "发表数量"
+
+#: tu.blog.models.py :Catalog
+msgid "Birth Date"
+msgstr "产生日期"
+
+#: tu.blog.models.py :Catalog
+msgid "Edit Date"
+msgstr "编辑日期"
+
+#: tu.blog.models.py :Tag
+msgid "Tag Manager"
+msgstr "标签管理"
+
+#: tu.blog.models.py :Entry
+msgid "Entry Manager"
+msgstr "博文管理"
+
+#: tu.blog.models.py :Entry
+msgid "Entry"
+msgstr "博文"
+
+#: tu.blog.models.py :Entry
+msgid "Title"
+msgstr "标题"
+
+#: tu.blog.models.py :Entry
+msgid "Is Public ?"
+msgstr "是否公开？"
+
+#: tu.blog.models.py :Entry
+msgid "Input Format"
+msgstr "输入格式"
+
+#: tu.blog.models.py :Entry
+msgid "Body"
+msgstr "内容"
+
+#: tu.blog.models.py :Entry
+msgid "Comments"
+msgstr "评论"
+
+#: tu.blog.models.py :Entry
+msgid "Read"
+msgstr "阅读"
+
+#: tu.blog.models.py :Entry
+msgid "Body Converted"
+msgstr "内容已经转换"
+
+#: tu.blog.models.py :Comment
+msgid "Comment Manager"
+msgstr "评论管理"
+
+#: tu.blog.models.py :Comment
+msgid "Author"
+msgstr "作者"
+
+#: tu.blog.models.py :Comment
+msgid "E-mail"
+msgstr "电子信箱"
+
+#: tu.blog.models.py :Comment
+msgid "URL"
+msgstr "URL链接"
+
+#: tu.blog.models.py :Comment
+msgid "Content"
+msgstr "内容"
+
+#: tu.blog.models.py :Comment
+msgid "Time"
+msgstr "时间"
+
+#: tu.blog.models.py :Comment
+msgid "IP"
+msgstr "IP地址"
+
+#: tu.blog.models.py :BlogRoll
+msgid "Blogroll"
+msgstr "博客链接"
+
+#: tu.blog.models.py :BlogRoll
+msgid "Address"
+msgstr "地址"
+
+#: templates/blog :entry_list
+msgid "Catalog :"
+msgstr "类别："
+
+#: templates/blog :entry_list
+msgid "Posted At :"
+msgstr "发表于："
+
+#: templates/blog :entry_list
+msgid "Edited At :"
+msgstr "编辑于："
+
+#: templates/blog :entry_list
+msgid "Read More ..."
+msgstr "全文阅读"
+
+#: templates/blog :entry_list
+msgid "Tags :"
+msgstr "标签："
+
+#: templates/blog :entry
+msgid "Entry List"
+msgstr "博文一览"
+
+#: templates/blog :entry
+msgid "Previous"
+msgstr "上一博文"
+
+#: templates/blog :entry
+msgid "Next"
+msgstr "下一博文"
+
+#: templates/blog :entry
+msgid "Comment List"
+msgstr "评论一览"
+
+#: templates/blog :entry
+msgid "Commented At"
+msgstr "评论于"
+
+#: tu.blog.views :entry
+msgid "The entry you have requested does not exist."
+msgstr "博文不存在。"
+
+#: templates/blog :entry
+msgid "Anonymity"
+msgstr "匿名"
+
+#: templates/blog :entry
+msgid "Content Is Required, Otherwise Exit Without Message."
+msgstr "内容必须填写，否则无提示退出。"
+
+#: templates/blog :archive
+msgid "There Are No Entries Available For This Year."
+msgstr "本年度没有博文。"
+
+#: templates/blog :archive
+msgid "Back To"
+msgstr "退回"
+
+#: templates/blog :archive
+msgid "Onwards To"
+msgstr "前往"
+
+#: templates/blog :archive
+msgid "Zoom Forwards To"
+msgstr "跳往"
+
+#: templates/blog :archive
+msgid "Current Year"
+msgstr "当前年度"
+
