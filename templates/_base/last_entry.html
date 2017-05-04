@@ -1,0 +1,7 @@
+{% if last_entry %}
+	<ol>
+		{% for entry in last_entry %}
+			<li><a href="{{ entry.get_absolute_url }}" title="{{ entry.title }}">{{ entry.title|slice:":40" }}</a></li>
+		{% endfor %}
+   </ol>
+{% endif %}

@@ -1,0 +1,9 @@
+{% if blogroll_list %}
+	<ul>
+		{% for blogroll in blogroll_list %}
+			<li><a href="{{ blogroll.address }}" target="_blank">{{ blogroll.name }}</a></li>
+		{% endfor %}
+	</ul>
+{% endif %}
+
+

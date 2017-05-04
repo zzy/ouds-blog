@@ -1,8 +1,0 @@
-{% if catalog_list %}
-	<ul>
-		{% for catalog in catalog_list %}
-			<li><a href="{{ catalog.get_absolute_url }}">{{ catalog.name }}</a></li>
-		{% endfor %}
-	</ul>
-{% endif %}
-
