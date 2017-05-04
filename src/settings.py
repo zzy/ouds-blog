@@ -54,7 +54,7 @@ LANGUAGES = (
              ('sv', 'Svenska'),
              ('ru', 'Русский'),
              ('jp', '日本語'),
-             ('ko', u'한국어'),
+             ('ko', '한국어'),
             )
 
 MEDIA_ROOT = '../media'

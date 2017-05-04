@@ -279,7 +279,7 @@ def comment(request, id):
     
     if comment_form.is_valid():
         remote_ip = request.META['REMOTE_ADDR']
-        logging.info(request.META.keys())
+        logging.info(list(request.META.keys()))
 
         author = request.POST['author']
         email = request.POST['email']

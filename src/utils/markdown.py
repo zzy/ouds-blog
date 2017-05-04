@@ -62,9 +62,9 @@ ENABLE_ATTRIBUTES = True  # @id = xyz -> <... id="xyz">
 SMART_EMPHASIS = 1        # this_or_that does not become this<i>or</i>that
 HTML_REMOVED_TEXT = "[HTML_REMOVED]" # text used instead of HTML in safe mode
 
-RTL_BIDI_RANGES = ((u'\u0590', u'\u07FF'),
+RTL_BIDI_RANGES = (('\u0590', '\u07FF'),
                     # from Hebrew to Nko (includes Arabic, Syriac and Thaana)
-                    (u'\u2D30', u'\u2D7F'),
+                    ('\u2D30', '\u2D7F'),
                     # Tifinagh
                     )
 
@@ -82,7 +82,7 @@ BOMS = { 'utf-8': (codecs.BOM_UTF8,),
          }
 
 def removeBOM(text, encoding):
-    convert = isinstance(text, unicode)
+    convert = isinstance(text, str)
     for bom in BOMS[encoding]:
         bom = convert and bom.decode(encoding) or bom
         if text.startswith(bom):
@@ -141,7 +141,7 @@ def getBidiType(text):
 
     ch = text[0]
 
-    if not isinstance(ch, unicode) or not ch.isalpha():
+    if not isinstance(ch, str) or not ch.isalpha():
         return None
 
     else:
@@ -325,7 +325,7 @@ class Element:
         if self.nodeName in ['p', 'li', 'ul', 'ol',
                              'h1', 'h2', 'h3', 'h4', 'h5', 'h6']:
 
-            if not self.attribute_values.has_key("dir"):
+            if "dir" not in self.attribute_values:
                 if self.bidi:
                     bidi = self.bidi
                 else:
@@ -832,7 +832,7 @@ class ReferencePattern (Pattern):
             # we'll use "google" as the id
             id = m.group(2).lower()
 
-        if not self.references.has_key(id): # ignore undefined refs
+        if id not in self.references: # ignore undefined refs
             return None
         href, title = self.references[id]
         text = m.group(2)
@@ -1136,7 +1136,7 @@ class CorePatterns:
     def __init__ (self):
 
         self.regExp = {}
-        for key in self.patterns.keys():
+        for key in list(self.patterns.keys()):
             self.regExp[key] = re.compile("^%s$" % self.patterns[key],
                                           re.DOTALL)
 
@@ -1236,7 +1236,7 @@ class Markdown:
  % (ext, extension_module_name))
             else:
 
-                if configs.has_key(ext):
+                if ext in configs:
                     configs_for_ext = configs[ext]
                 else:
                     configs_for_ext = []
@@ -1620,7 +1620,7 @@ class Markdown:
                 
                 x = parts[i]
 
-                if isinstance(x, (str, unicode)):
+                if isinstance(x, str):
                     result = self._applyPattern(x, \
                                 self.inlinePatterns[patternIndex], \
                                 patternIndex)
@@ -1636,7 +1636,7 @@ class Markdown:
 
         for i in range(len(parts)):
             x = parts[i]
-            if isinstance(x, (str, unicode)):
+            if isinstance(x, str):
                 parts[i] = self.doc.createTextNode(x)
 
         return parts
@@ -1692,7 +1692,7 @@ class Markdown:
 
                             for item in result:
 
-                                if isinstance(item, (str, unicode)):
+                                if isinstance(item, str):
                                     if len(item) > 0:
                                         node.insertChild(position,
                                              self.doc.createTextNode(item))
@@ -1720,13 +1720,13 @@ class Markdown:
             self.source = source
 
         if not self.source:
-            return u""
+            return ""
 
         try:
-            self.source = unicode(self.source)
+            self.source = str(self.source)
         except UnicodeDecodeError:
             message(CRITICAL, 'UnicodeDecodeError: Markdown only accepts unicode or ascii  input.')
-            return u""
+            return ""
 
         for pp in self.textPreprocessors:
             self.source = pp.run(self.source)
@@ -1827,13 +1827,13 @@ class Extension:
         self.config = configs
 
     def getConfig(self, key):
-        if self.config.has_key(key):
+        if key in self.config:
             return self.config[key][0]
         else:
             return ""
 
     def getConfigInfo(self):
-        return [(key, self.config[key][1]) for key in self.config.keys()]
+        return [(key, self.config[key][1]) for key in list(self.config.keys())]
 
     def setConfig(self, key, value):
         self.config[key][0] = value
@@ -1861,7 +1861,7 @@ def parse_options():
                     'encoding': None }
 
         else:
-            print OPTPARSE_WARNING
+            print(OPTPARSE_WARNING)
             return None
 
     parser = optparse.OptionParser(usage="%prog INPUTFILE [options]")

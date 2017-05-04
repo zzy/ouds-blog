@@ -42,18 +42,18 @@ LOCALE_PATHS = (
 )
 
 LANGUAGES = (
-    ('zh-cn', u'简体中文'),
-    ('zh-tw', u'繁體中文'),
-    ('en', u'English'),
-    ('de', u'Deutsch'),
-    ('fr', u'Français'),
-    ('it', u'Italiano'),
-    ('pt', u'Português'),
-    ('es', u'Español'),
-    ('sv', u'Svenska'),
-    ('ru', u'Русский'),
-    ('jp', u'日本語'),
-    ('ko', u'한국어'),
+    ('zh-cn', '简体中文'),
+    ('zh-tw', '繁體中文'),
+    ('en', 'English'),
+    ('de', 'Deutsch'),
+    ('fr', 'Français'),
+    ('it', 'Italiano'),
+    ('pt', 'Português'),
+    ('es', 'Español'),
+    ('sv', 'Svenska'),
+    ('ru', 'Русский'),
+    ('jp', '日本語'),
+    ('ko', '한국어'),
 )
 
 MEDIA_ROOT = '/home/oudsus/Ouds/blog/media'
